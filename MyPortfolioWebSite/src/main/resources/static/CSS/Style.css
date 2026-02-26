@@ -1,0 +1,45 @@
+span
+    {
+        color : #47e6be;
+    }
+a
+    {
+        color : #47e6be;
+        text-decoration: none;
+    }
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.about
+    {
+        color:white;
+        max-width: 50%
+
+    }
+
+body
+    {
+        background-color:black;
+    }
+
+.cv
+    {
+        background-color: black;
+        color: #47e6be;
+        border-color: #47e6be;
+        border-radius: 5px;
+
+    }
+
+.cv:hover {
+    background-color: #47e6be;
+    color: white;
+}
+
+.logo
+    {
+        align-items: center;
+    }

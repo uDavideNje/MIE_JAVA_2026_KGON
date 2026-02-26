@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" th:href="@{/CSS/Style.css}">
 </head>
 <body>
-
-<h1>Hello World</h1>
-<p>This is my first GitHub Pages site!</p>
+<!--site header -->
+<div th:replace="~{fragments/header :: site-header}"></div>
+<!--about section -->
+<div th:replace="~{fragments/about :: about-section}"></div>
+<script th:src="@{/JS/Script.js}"></script>
 </body>
 </html>
