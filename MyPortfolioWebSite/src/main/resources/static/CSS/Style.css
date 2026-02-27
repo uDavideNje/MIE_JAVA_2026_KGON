@@ -13,11 +13,23 @@ a
     gap: 20px;
     justify-content: flex-end;
 }
-.about
+.home-section
+    {
+        display: flex;
+        gap: 20px;
+    }
+.home
     {
         color:white;
+        max-width: 50%;
+        padding: 20px;
+        flex: 1;
+    }
+.image
+    {
         max-width: 50%
-
+        padding: 20px;
+        flex: 1;
     }
 
 body
