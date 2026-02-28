@@ -1,28 +1,50 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <div th:fragment="home-section">
     <div class="home-section">
-        <div class="home">
-            <div>
-                Hi my name is
+        <section class="home" id="introduction">
+            <div class="home-background"></div>
+            <div class="introduction-container">
+                <div class="introduction-content">
+                    <div class="introduction-greeting">
+                        Hi my name is
+                    </div>
+                    <h1 class="introduction-title">
+                        Nkosinathi Kgobe
+                    </h1>
+                    <h2 class="introduction-subtitle">
+                        An aspiring Java Developer
+                    </h2>
+                    <p class="introduction-description">
+                        A <span>Computer Science graduate</span> from Tshwane University of Technology
+                        with a strong passion for technology and <span>Java development</span>.
+                        I am eager to gain hands-on experience,
+                        contribute meaningfully to innovative projects,
+                        and continue growing within the industry.
+                        My long-term goal is to build a clear and focused path toward becoming a <span>DevOps Engineer</span>.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class= "btns" id="projects-btn">Checkout My Work</a>
+                        <a href="#contact" class= "btns" id="contact-btn">Get In Touch</a>
+                    </div>
+                    <div class="socail-links">
+                        <a href="davidtechbuilds@gmail.com" class="socail-link">
+                                <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nkosinathi-kgobe-6581062a9/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/uDavideNje" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-visual" >
+                    <img src="/images/img.png" alt="Profile" >
+                </div>
             </div>
-            <h1>
-                Nkosinathi Kgobe
-            </h1>
-            <h2>
-                An aspiring Java Developer
-            </h2>
-            <p>
-                I am a <span>Computer Science graduate</span> from Tshwane University of Technology
-                with a strong passion for technology and <span>Java development</span>.
-                I am eager to gain hands-on experience,
-                contribute meaningfully to innovative projects,
-                and continue growing within the industry.
-                My long-term goal is to build a clear and focused path toward becoming a <span>DevOps Engineer</span>.
-            </p>
-        </div>
-        <div class="image">
-            <img src="/images/img.png">
-        </div>
+
+        </section>
+
     </div>
 
 

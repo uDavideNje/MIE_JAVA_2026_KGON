@@ -1,17 +1,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<header th:fragment="site-header">
-    <div class="logo">
-        <span>Dave</span>
-    </div>
-    <div class="nav">
-        <a href="#">01. About</a>
-        <a href="#">02. Experience</a>
-        <a href="#">03. Educations</a>
-        <a href="#">04. Contact</a>
+<th:block th:fragment="site-header">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span>Dave</span>
+            </div>
+            <nav class="nav">
+                <a href="#about">01. About</a>
+                <a href="#projects">02. Projects</a>
+                <a href="#education">03. Educations</a>
+                <a href="#contact">04. Contact</a>
 
-        <div class="resume">
-            <button class="cv" id="viewCV">View CV</button>
+                <div class="resume">
+                    <button class="cv" id="viewCV">View CV</button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </div>
 
-</header>
+
+    </header>
+</th:block>
