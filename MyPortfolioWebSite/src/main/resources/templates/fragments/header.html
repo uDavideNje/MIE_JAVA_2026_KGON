@@ -1,23 +1,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <th:block th:fragment="site-header">
     <header class="header">
+        <div class="logo">
+            <span>Dave</span>
+        </div>
         <div class="header-container">
-            <div class="logo">
-                <span>Dave</span>
-            </div>
-            <nav class="nav">
-                <a href="#about">01. About</a>
-                <a href="#projects">02. Projects</a>
-                <a href="#education">03. Educations</a>
-                <a href="#contact">04. Contact</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav" id="nav">
+
+                <li><a href="#about">01. About</a></li>
+                <li><a href="#projects">02. Projects</a></li>
+                <li><a href="#education">03. Educations</a></li>
+                <li><a href="#contact">04. Contact</a></li>
 
                 <div class="resume">
                     <button class="cv" id="viewCV">View CV</button>
                 </div>
-            </nav>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            </ul>
+
         </div>
 
 

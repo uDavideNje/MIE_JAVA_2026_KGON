@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PortfolioController {
     @GetMapping("/")
     public String home() {
-        return "index.html"; // loads templates/index.html
+        return "index"; // loads templates/index.html
     }
 }

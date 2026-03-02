@@ -1,0 +1,58 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<div th:fragment="contact-section" class="contact-form">
+    <div class="contact">
+        <div class="contact-container">
+            <div class="text-container">
+                <h3 class="contact-heading">
+                    Get in touch with David(Me).
+                </h3>
+
+            </div>
+            <div class="form-container">
+                <form >
+
+
+                    <div class="names-container">
+                        <div class="fname-container">
+                            <label for="first_name" class="label">First Name</label>
+                            <input type="text" name="name" id="first_name" placeholder="John" required
+                                   class="input-field" />
+                        </div>
+                        <div class="lname-container">
+                            <label for="lname" class="label">Last Name</label>
+                            <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                                   class="input-field" />
+                        </div>
+                    </div>
+
+                    <div class="mail-container">
+                        <div class="email-container">
+                            <label for="email" class="label">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="you@company.com" required
+                                   class="input-field" />
+                        </div>
+
+                        <div class="mobile-container">
+                            <label for="phone" class="label">Phone Number</label>
+                            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+                                   class="input-field" />
+                        </div>
+                    </div>
+
+                    <div class="message-container">
+                        <label for="message" class="label">Your Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" required
+                                  class="input-field"></textarea>
+                    </div>
+
+                    <div class="messagebtn-container">
+                        <button type="submit" class="btns" id="message-btn">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,3 +7,15 @@ viewButton.addEventListener('click', () => {
     // Open PDF in a new browser tab
     window.open(pdfUrl, '_blank');
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+});
+
+console.log(document.getElementById("hamburger"));
+console.log(document.getElementById("nav"));
