@@ -64,12 +64,27 @@ a
         padding-right: 20px;
     }
 
-header-container
+.logo {
+    background: linear-gradient(var(--secondary-color), var(--highlight-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+header
+    {
+        position:fixed;
+        z-index:999;
+        background: var(--dark-color);
+        width: 100%;
+    }
+.header-container
     {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         position: relative;
+
     }
 
 #theme
@@ -164,13 +179,11 @@ header-container
     {
         width:100%;
     }
-.profilePicture {
-     transition: transform 0.6s ease;
+#profilePicture {
+     border-radius:10rem;
  }
 
- .profilePicture {
-     transform: rotateZ(180deg);
- }
+
 .introduction-content
     {
         position: relative;
@@ -324,10 +337,18 @@ body
 
 .form-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to stack on mobile */
+    flex-wrap: wrap;/* Allows items to stack on mobile */
     padding: 20px;
     gap: 20px;       /* Consistent spacing instead of 10% */
+    width:100%;
+    margin: 0 auto;
+    justify-content: center;
 }
+
+input
+    {
+        padding: 0.1rem;
+    }
 
 .contact-container {
     display: flex;
@@ -336,6 +357,10 @@ body
     width: 100%;
     max-width: 600px; /* Limits width for better readability */
     margin: 0 auto;  /* Centers the form on the page */
+    background : linear-gradient( var(--primary-color), var(--secondary-color));
+    border-radius:10px;
+    justify-content: center;
+
 }
 
 /* 2. Unified Row Styling */
@@ -354,8 +379,11 @@ body
 }
 
 .text-container {
+    display: flex;
     color: var(--text-color);
     width: 100%;
+    margin: auto;
+    justify-content: center;
 }
 
 /* 3. Improved Textarea */
@@ -365,6 +393,12 @@ body
     resize: vertical;  /* Allows user to grow it safely */
     padding: 10px;
 }
+.messagebtn-container
+    {
+        display:flex;
+        margin: auto;
+        justify-content: center;
+    }
 .section {
     padding: 8rem 0;
     position: relative;
@@ -535,3 +569,4 @@ body
     font-weight: 500;
     font-size: 0.9rem;
 }
+
