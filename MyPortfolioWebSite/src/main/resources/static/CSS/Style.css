@@ -1,27 +1,25 @@
 :root
     {
 
-         --dark-color: #0A0A0A;        /* deep black background */
-         --secondary-color: #1C1A26;   /* dark slate purple-gray */
-         --primary-color: #7D5BA6;     /* muted medium purple */
-         --accent-color: #A584D6;      /* soft lavender accent */
-         --highlight-color: #CBB2E2;   /* gentle glowing light purple */
-         --text-color: #E6E6E6;        /* soft white for readability */
-         --grey-color: #999999;        /* medium grey for secondary text */
-
+        --dark-color: #050505;        /* deeper black background */
+            --secondary-color: #171522;   /* darker slate purple-gray */
+            --primary-color: #6D4ED3;     /* stronger purple for main elements */
+            --accent-color: #9F7AEA;      /* brighter lavender accent */
+            --highlight-color: #C4B5FD;   /* clearer glowing light purple */
+            --text-color: #F3F4F6;        /* cleaner soft white text */
+            --grey-color: #9CA3AF80;      /* neutral gray overlay */
     }
 
 [data-theme="light"]
       {
 
-            --dark-color: #F4FBF6;        /* very soft mint background */
-            --secondary-color: #E3F5EA;   /* light green section background */
-            --primary-color: #2F855A;     /* rich forest green */
-            --accent-color: #38A169;      /* fresh medium green */
-            --highlight-color: #9AE6B4;   /* soft mint highlight */
-            --text-color: #1B4332;        /* deep green-charcoal text */
-            --grey-color: #6B7280;        /* neutral gray for secondary text */
-
+            --dark-color: #F0FDF4;        /* cleaner mint background */
+                --secondary-color: #DCFCE7;   /* light green section background */
+                --primary-color: #166534;     /* deeper forest green */
+                --accent-color: #22C55E;      /* brighter fresh green */
+                --highlight-color: #86EFAC;   /* clearer mint highlight */
+                --text-color: #052E16;        /* stronger dark green text */
+                --grey-color: #6B728080;      /* neutral gray overlay */
       }
 
 *
@@ -77,6 +75,7 @@ header
         z-index:999;
         background: var(--dark-color);
         width: 100%;
+        height: 10%;
     }
 .header-container
     {
@@ -87,6 +86,10 @@ header
 
     }
 
+#themeToggle
+    {
+        padding: 0.4rem 1.2rem;
+    }
 #theme
     {
         background: none;
@@ -106,7 +109,8 @@ header
 @media (max-width: 768px) {
       .hamburger
           {
-          position:relative;
+          position:fixed;
+          top : 0;
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -136,8 +140,8 @@ header
       .nav.active
         {
             display: flex;
+         }
 
-        }
       .introduction-container
         {
             flex-direction: column;
@@ -251,6 +255,11 @@ header
 [data-theme="light"] .home-section {
     background-image: url('/images/lightModeBackground.jpg');
 }
+
+[data-theme="light"] #projects{
+    background-image: url('/images/projectsBackgroundLight.jpg');
+}
+
 .label
         {
           color:var(--text-color);
@@ -303,6 +312,7 @@ header
 }
 
 .btns::before {
+    border: none;
     content: '';
     position: absolute;
     top: 0;
@@ -325,16 +335,28 @@ body
 
 
 
-#viewCV:hover {
-    background-color: var(--grey-color);
-    color: var(--secondary-color);
-}
+#viewCV:hover
+    {
+        transform: translateY(-5px);
+    }
+#viewCV
+    {
+        border: none;
+    }
 
 .logo
     {
         align-items: center;
     }
-
+#projects
+    {
+        position: relative;
+        background-image: url('/images/projectsBackgroundDark.jpg');
+        background-size: cover;
+        background-position: center;
+        width:100%;
+        color : var(--text-color);
+    }
 .form-container {
     display: flex;
     flex-wrap: wrap;/* Allows items to stack on mobile */
@@ -398,6 +420,10 @@ input
         display:flex;
         margin: auto;
         justify-content: center;
+    }
+#message-btn
+    {
+        border: none;
     }
 .section {
     padding: 8rem 0;
@@ -570,3 +596,8 @@ input
     font-size: 0.9rem;
 }
 
+#projects{}
+h6
+    {
+        font-size: 20px;
+    }

@@ -44,33 +44,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
     hamburger.addEventListener("click", function() {
         nav.classList.toggle("active");
+           if (nav.classList.contains("active")) {
+                hamburger.innerHTML = '<i class="fa-solid fa-x"></i>';
+            } else {
+                hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
     });
 });
-
-function changeImage() {
-    const img = document.getElementById("profilePicture");
-
-    // Start flip
-    img.classList.add("active");
-
-    setTimeout(() => {
-        // Change image halfway through animation
-        if (img.src.includes("profile1.png")) {
-            img.src = "./images/profile2.JPEG";
-        } else {
-            img.src = "./images/profile1.png";
-        }
-    }, 300); // Half of animation time
-
-    setTimeout(() => {
-        // Reset flip so it can animate again
-        img.classList.remove("active");
-    }, 600);
-}
-
-// Click event
-const img = document.getElementById("profilePicture");
-img.addEventListener("click", changeImage);
+//
+//function changeImage() {
+//    const img = document.getElementById("profilePicture");
+//
+//    // Start flip
+//    img.classList.add("active");
+//
+//    setTimeout(() => {
+//        // Change image halfway through animation
+//        if (img.src.includes("profile1.png")) {
+//            img.src = "./images/profile2.JPEG";
+//        } else {
+//            img.src = "./images/profile1.png";
+//        }
+//    }, 300); // Half of animation time
+//
+//    setTimeout(() => {
+//        // Reset flip so it can animate again
+//        img.classList.remove("active");
+//    }, 600);
+//}
+//
+//// Click event
+//const img = document.getElementById("profilePicture");
+//img.addEventListener("click", changeImage);
 
 //console.log(document.getElementById("hamburger"));
 //console.log(document.getElementById("nav"));
