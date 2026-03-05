@@ -1,0 +1,29 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<th:block th:fragment="site-header">
+    <header class="header">
+        <div class="logo">
+            <p><strong>DavidTechBuilds</strong></p>
+        </div>
+        <div class="header-container">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav" id="nav">
+
+                <li><a href="#about">01. About</a></li>
+                <li><a href="#projects">02. Projects</a></li>
+                <li><a href="#education">03. Educations</a></li>
+                <li><a href="#contact">04. Contact</a></li>
+
+                <div class="theme">
+                    <button class="btns" id="themeToggle">
+                       Change Theme
+                    </button>
+                </div>
+            </ul>
+
+        </div>
+
+
+    </header>
+</th:block>
