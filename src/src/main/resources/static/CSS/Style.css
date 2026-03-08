@@ -43,6 +43,11 @@ a
         color: var(--text-color);
     }
 
+a:hover
+    {
+        text-decoration: underline;
+    }
+
 .nav {
     display: flex;
     align-items: center;
@@ -168,6 +173,7 @@ header
 .contact-section
     {
         position:relative;
+        padding:1rem;
     }
 
 .introduction-container
@@ -333,7 +339,10 @@ body
         overflow-y: auto;
     }
 
-
+.education
+    {
+        color: var(--text-color);
+    }
 
 #viewCV:hover
     {
@@ -601,3 +610,39 @@ h6
     {
         font-size: 20px;
     }
+
+.education
+    {
+        display:flex;
+        flex-direction:column;
+        padding:1rem;
+        position: relative;
+        justify-content:center;
+    }
+.education-container
+    {
+        display:flex;
+        flew-direction:row;
+        gap: 2rem;
+        justify-content:center;
+
+
+    }
+
+.education-item {
+
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--highlight-color);
+  padding:1px;
+
+}
+
+
+.education-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
